@@ -6,7 +6,7 @@ namespace CsharpBasicProgramming
     {
         static void Main(string[] args)
         {
-            /*
+            
              
             //Common Practice 
              
@@ -109,7 +109,7 @@ namespace CsharpBasicProgramming
 
             Console.WriteLine("LOOP completed");
 
-            */
+           
         }
     }
 }
