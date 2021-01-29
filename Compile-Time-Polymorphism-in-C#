@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CsharpBasicProgramming
+{
+
+    public class Calculate
+
+    {
+
+        public void SumNumbers(int a, int b)
+
+        {
+
+            Console.WriteLine("a + b = ", a + b);
+
+        }
+
+        public void SumNumbers(int a, int b, int c)
+
+        {
+
+            Console.WriteLine("a + b + c = ", a + b + c);
+
+        }
+
+    }
+
+    class OOPConcepts
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Calculate poly = new Calculate();
+
+            poly.SumNumbers(1, 2);
+
+            poly.SumNumbers(1, 2, 3);
+
+            Console.ReadLine();
+
+        }
+
+
+
+    }
+}
