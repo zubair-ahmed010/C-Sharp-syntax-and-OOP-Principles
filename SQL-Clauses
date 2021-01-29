@@ -1,0 +1,21 @@
+Where Clause:
+SELECT * FROM Employees
+WHERE EmployeesID=1;
+
+
+Order by Clause:
+SELECT * FROM Employees
+ORDER BY City;
+
+INSERT INTO
+INSERT INTO Employees (EmployeeName, ContactNo, Address, City, Country)
+VALUES ('Zubair', '03246652177', 'Johar town', 'Lahore', 'Pakistan');
+
+
+UPDATE
+UPDATE Employees 
+SET EmployeeName= 'Zubair Ahmed', City= 'Bahawalpur'
+WHERE CustomerID = 1;
+
+DELETE
+DELETE FROM Employees WHERE EmployeeName='Zubair Ahmed';
