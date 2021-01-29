@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CsharpBasicProgramming
+{
+
+    public class One
+
+    {
+
+        public string Name;
+
+        public void GetName()
+
+        {
+
+            Console.WriteLine("Put your Name: {0}", Name);
+
+        }
+
+    }
+
+    public class Two : One
+
+    {
+
+        public string Residence;
+
+        public void GetLocation()
+
+        {
+
+            Console.WriteLine("Your Residence: {0}", Residence);
+
+        }
+
+    }
+
+    public class Three : Two
+
+    {
+
+        public int Age;
+
+        public void GetAge()
+
+        {
+
+            Console.WriteLine("Age: {0}", Age);
+
+        }
+
+    }
+
+    class OOPConcepts
+    {
+
+
+        static void Main(string[] args)
+
+        {
+
+            Three obj = new Three();
+
+            obj.Name = "Zubair Ahmed";
+
+            obj.Residence = "Lahore";
+
+            obj.Age = 24;
+
+            obj.GetName();
+
+            obj.GetLocation();
+
+            obj.GetAge();
+
+
+            Console.ReadLine();
+
+        }
+
+
+    }
+   
+}
