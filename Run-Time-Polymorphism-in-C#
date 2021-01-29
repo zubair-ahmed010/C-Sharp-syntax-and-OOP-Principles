@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CsharpBasicProgramming
+{
+
+//Parent Class
+    public class BaseClass
+
+    {
+
+        public virtual void GetInfo()
+
+        {
+
+            Console.WriteLine("What's your location");
+
+        }
+
+    }
+
+    // Child Class
+
+    public class ChildClass : BaseClass
+
+    {
+
+        public override void GetInfo()
+
+        {
+
+            Console.WriteLine("Lahore, Punjab, Pakistan");
+
+        }
+
+    }
+
+    class OOPConcepts
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            ChildClass poly = new ChildClass();
+
+            poly.GetInfo();
+
+            BaseClass poly2 = new BaseClass();
+
+            poly2.GetInfo();
+
+            Console.ReadLine();
+
+        }
+
+
+
+    }
+}
