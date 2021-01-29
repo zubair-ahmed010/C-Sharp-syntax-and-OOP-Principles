@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CsharpBasicProgramming
+{
+    public class BaseClass
+
+    {
+
+        public virtual void GetInfo()
+
+        {
+
+            Console.WriteLine("What's your Company");
+
+        }
+
+    }
+
+
+    public class ChildClass : BaseClass
+
+    {
+
+        public override void GetInfo()
+
+        {
+
+            Console.WriteLine("Systems Limited, Lahore");
+
+        }
+
+
+
+    }
+
+    class OOPConcepts
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            ChildClass obj1 = new ChildClass();
+
+            obj1.GetInfo();
+
+            BaseClass obj2 = new BaseClass();
+
+            obj2.GetInfo();
+
+            Console.ReadLine();
+
+        }
+
+
+    }
+}
