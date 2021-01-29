@@ -1,0 +1,4 @@
+CREATE VIEW [City Employees] AS
+SELECT EmployeeName, Address
+FROM Employees
+WHERE City = 'Lahore';
