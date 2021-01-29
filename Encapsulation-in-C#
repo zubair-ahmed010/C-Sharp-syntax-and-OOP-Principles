@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CsharpBasicProgramming
+{
+
+    class TestEncap
+
+    {
+
+        private string location;
+
+        private string name;
+
+        public string Location
+
+        {
+
+            get
+
+            {
+
+                return location;
+
+            }
+
+            set
+
+            {
+
+                location = value;
+
+            }
+
+        }
+
+        public string Name
+
+        {
+
+            get
+
+            {
+
+                return name;
+
+            }
+
+            set
+
+            {
+
+                name = value;
+
+            }
+
+        }
+
+    }
+
+    class OOPConcepts
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            TestEncap encap = new TestEncap();
+            encap.Name = "Zubair Ahmed";
+            encap.Location = "Bahawalpur";
+            Console.WriteLine("Name: " + encap.Name);
+            Console.WriteLine("Location: " + encap.Location);
+            Console.ReadLine();
+
+        }
+
+
+
+    }
+}
