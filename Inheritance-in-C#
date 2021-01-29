@@ -1,0 +1,86 @@
+using System;
+
+namespace CsharpBasicProgramming
+{
+
+    public class Candidate
+
+    {
+
+        public string Name;
+
+        private string Location;
+
+        public Candidate()
+
+        {
+
+            Console.WriteLine("Constructor of Parent class");
+
+        }
+
+        public void GetUserInfo(string loc)
+
+        {
+
+            Location = loc;
+
+            Console.WriteLine("Name: {0}", Name);
+
+            Console.WriteLine("Location: {0}", Location);
+
+        }
+
+    }
+
+    public class Details : Candidate
+
+    {
+
+        public int Age;
+
+        public Details()
+
+        {
+
+            Console.WriteLine("Constructor of Derived class");
+
+        }
+
+        public void GetAge()
+
+        {
+
+            Console.WriteLine("Age: {0}", Age);
+
+        }
+
+    }
+
+
+    class CsharpBasic
+    {
+        static void Main(string[] args)
+        {
+
+            {
+
+                Details d = new Details();
+
+                d.Name = "Zubair Ahmed";
+
+                d.Age = 24;
+
+                d.GetUserInfo("Lahore");
+
+                d.GetAge();
+
+                Console.WriteLine("\n Exit Process");
+
+                Console.ReadLine();
+
+            }
+
+             }
+       }
+  }
