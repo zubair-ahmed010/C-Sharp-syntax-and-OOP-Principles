@@ -1,0 +1,15 @@
+CREATE TABLE EmployeeDetails
+
+(
+
+empid int NOT NULL,
+
+empname varchar(50) NULL,
+
+designation varchar(50) NULL,
+
+salary int NOT NULL,
+
+Company varchar(50) NULL,
+
+joineddate datetime NULL
